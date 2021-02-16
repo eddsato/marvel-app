@@ -1,4 +1,4 @@
-package com.eddsato.marvelapp.network
+package com.eddsato.marvelapp.infrastructure.network
 
 import com.eddsato.marvelapp.BuildConfig
 import retrofit2.Retrofit
