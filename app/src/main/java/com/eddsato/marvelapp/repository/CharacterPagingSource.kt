@@ -13,7 +13,7 @@ import java.util.*
 private const val MARVEL_STARTING_PAGE_INDEX = 0
 
 class CharacterPagingSource(
-        private val service: MarvelAPI
+        private val api: MarvelAPI
 ) : PagingSource<Int, Character>() {
 
     override suspend fun load(params: LoadParams<Int>): LoadResult<Int, Character> {
@@ -27,7 +27,7 @@ class CharacterPagingSource(
         val position = params.key ?: MARVEL_STARTING_PAGE_INDEX
 
         return try {
-            val response = service.getCharacterList(
+            val response = api.getCharacterList(
                 timestamp,
                 publicApiKey,
                 hash.md5(),
