@@ -5,13 +5,13 @@ import androidx.paging.PagingDataAdapter
 import androidx.recyclerview.widget.DiffUtil
 import com.eddsato.marvelapp.entity.Character
 
-class CharactersAdapter : PagingDataAdapter<Character, CharacterViewHolder>(CHARACTER_COMPARATOR) {
+class CharactersAdapter : PagingDataAdapter<Character, CharactersViewHolder>(CHARACTER_COMPARATOR) {
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharacterViewHolder {
-        return CharacterViewHolder.create(parent)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CharactersViewHolder {
+        return CharactersViewHolder.create(parent)
     }
 
-    override fun onBindViewHolder(holder: CharacterViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: CharactersViewHolder, position: Int) {
         val characterItem = getItem(position)
         if (characterItem != null) {
             holder.bind(characterItem)
