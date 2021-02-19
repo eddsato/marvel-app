@@ -11,8 +11,8 @@ class CharacterRepository(private val api: MarvelAPI) {
 
     fun getCharactersListStream(): Flow<PagingData<Character>> {
         return Pager(
-                config = PagingConfig(pageSize = RESULT_PAGE_SIZE, enablePlaceholders = false),
-                pagingSourceFactory = { CharacterPagingSource(api) }
+            config = PagingConfig(pageSize = RESULT_PAGE_SIZE, enablePlaceholders = false),
+            pagingSourceFactory = { CharacterPagingSource(api) }
         ).flow
     }
 
