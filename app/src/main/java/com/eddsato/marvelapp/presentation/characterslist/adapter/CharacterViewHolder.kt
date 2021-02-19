@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.eddsato.marvelapp.R
 import com.eddsato.marvelapp.entity.Character
@@ -18,7 +19,7 @@ class CharacterViewHolder(view: View) : RecyclerView.ViewHolder(view) {
 
     init {
         view.setOnClickListener {
-            // not implemented
+            Toast.makeText(view.context, "Clicked", Toast.LENGTH_LONG).show()
         }
     }
 

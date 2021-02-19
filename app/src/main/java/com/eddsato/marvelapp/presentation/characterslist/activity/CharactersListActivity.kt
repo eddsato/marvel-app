@@ -30,6 +30,10 @@ class CharactersListActivity : AppCompatActivity() {
         getCharactersList()
     }
 
+    private fun initAdapter() {
+        binding.characterListRecycle.adapter = adapter
+    }
+
     private fun getCharactersList() {
         characterListJob?.cancel()
         characterListJob = lifecycleScope.launch {
@@ -37,9 +41,5 @@ class CharactersListActivity : AppCompatActivity() {
                 adapter.submitData(it)
             }
         }
-    }
-
-    private fun initAdapter() {
-        binding.characterListRecycle.adapter = adapter
     }
 }

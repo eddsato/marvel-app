@@ -12,5 +12,4 @@ class CharactersListViewModel(private val repository: CharacterRepository) : Vie
 
     fun getCharactersList(): Flow<PagingData<Character>> =
         repository.getCharactersListStream().cachedIn(viewModelScope)
-
 }
