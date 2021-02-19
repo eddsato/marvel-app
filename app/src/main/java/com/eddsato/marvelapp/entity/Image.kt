@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize
-class Image (
+data class Image (
     @SerializedName("path")
     val path: String,
     @SerializedName("extension")

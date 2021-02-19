@@ -11,7 +11,7 @@ data class ComicList (
     @SerializedName("collectionURI")
     val collectionURI: String,
     @SerializedName("items")
-    val items: ComicSummary,
+    val items: List<ComicSummary>,
     @SerializedName("returned")
     val returned: Int
 ) : Parcelable
