@@ -13,7 +13,7 @@
         android:usesCleartextTraffic="true"
         android:supportsRtl="true"
         android:theme="@style/Theme.Marvelapp">
-        <activity android:name=".presentation.characterslist.activity.CharactersListActivity">
+        <activity android:name=".presentation.characterslist.activity.CharactersActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
