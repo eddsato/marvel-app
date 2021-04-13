@@ -1,7 +1,6 @@
 package com.eddsato.marvelapp.infrastructure.network
 
 import com.eddsato.marvelapp.entity.CharacterDataWrapper
-import kotlinx.coroutines.flow.Flow
 import retrofit2.http.GET
 import retrofit2.http.Query
 

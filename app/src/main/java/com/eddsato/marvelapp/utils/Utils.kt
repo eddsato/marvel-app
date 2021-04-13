@@ -1,7 +1,9 @@
 package com.eddsato.marvelapp.utils
 
 import java.text.SimpleDateFormat
-import java.util.*
+import java.util.Date
+import java.util.Locale
+
 
 object Utils {
 

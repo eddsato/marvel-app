@@ -3,7 +3,7 @@ package com.eddsato.marvelapp.infrastructure.extensions
 import java.math.BigInteger
 import java.security.MessageDigest
 
-fun String.md5(): String {
+fun String.md5Encrypt(): String {
     val md = MessageDigest.getInstance("MD5")
 
     return BigInteger(
